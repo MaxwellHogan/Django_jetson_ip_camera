@@ -3,7 +3,7 @@ This project demonstrates a simple example of streaming both cameras to a Django
 To modify the camera feeds you can open up base/views.py and change the strings gstreamer_config0 (line 57) and gstreamer_config1 (line 63).
 Alternatively you can make changes directly to the VideoCamera object.
 
-I use a post-processing function - also defined in base/view.py - to convert the raw frame format and flip it (as my cameras were mounted upside down), you can make changes to the iamges prior to display in here. 
+I use a post-processing function - also defined in base/view.py - to convert the raw frame format and flip it (as my cameras were mounted upside down), you can make changes to the images prior to display in here. 
 
 Example video showing the interface on iphone in safari: https://www.youtube.com/shorts/bUfKUCbns8c
 
