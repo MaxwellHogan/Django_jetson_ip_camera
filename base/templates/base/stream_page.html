@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <h1>Hello World</h1>
+    <div>
+        <div>
+            <img src="{% url 'cam0_stream' %}" width="40%">
+            <img src="{% url 'cam1_stream' %}" width="40%">
+        </div>
+
+    </div>
+
+
+{% endblock content%}

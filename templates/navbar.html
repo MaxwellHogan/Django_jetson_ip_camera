@@ -1,0 +1,31 @@
+
+<!-- this is how to define a style  -->
+{% load static %}
+
+<style>
+    .navbar-container{
+        display: grid;
+        /* below is how to create two columns - one small column 1 fraction (1/4) the size of the page */
+        grid-template-columns: 1fr 3fr;  
+    }
+
+</style>
+
+<div class="navbar-container">
+    <div>
+        <img src="{% static 'images/teamBron_inv.png' %}" />
+    </div>
+    <div>
+        <div>
+            {% if request.user.is_authenticated %}
+                <p>Hello {{request.user}}</p>
+                <a href="{% url 'logout' %}">Logout</a>
+            {% endif %}
+        </div>
+
+    </div>
+
+</div>
+
+
+<hr>
