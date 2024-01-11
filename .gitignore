@@ -1,0 +1,7 @@
+vid_out/*
+
+feedFish.py
+motor_controller.py
+cron_log.log
+
+.png

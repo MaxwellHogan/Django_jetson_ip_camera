@@ -3,9 +3,13 @@
 {% block content %}
     <h1>Hello World</h1>
     <div>
-        <div>
-            <img src="{% url 'cam0_stream' %}" width="40%">
-            <img src="{% url 'cam1_stream' %}" width="40%">
+        <div style="width:75vw;height:auto; display:grid;grid-template-columns:1fr 1fr;">
+            <div>
+                <img src="{% url 'cam0_stream' %}">
+            </div>
+            <div>
+                <img src="{% url 'cam1_stream' %}">
+            </div>
         </div>
 
     </div>
